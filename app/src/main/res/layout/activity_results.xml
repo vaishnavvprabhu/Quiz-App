@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.vaisworks.assignment.ResultActivity"
+    android:background="@color/main_blue">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Restart"
+        android:id="@+id/btnRestart"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="119dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#01579B"
+        android:textColor="#ffffff" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="126dp"
+        android:fontFamily="@font/product_sans_bold"
+        android:text="Results"
+        android:textColor="@color/white"
+        android:textSize="48dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/wAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnRestart"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="110dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="181dp"
+        android:layout_marginBottom="365dp"
+        android:textAlignment="center"
+        app:flow_horizontalAlign="center"
+        app:flow_verticalAlign="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/wAnswerCounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/product_sans_bold"
+            android:text="1"
+            android:textColor="@color/white"
+            android:textSize="48dp"
+            app:layout_constraintEnd_toStartOf="@+id/eye"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+        <com.iambedant.text.OutlineTextView
+            android:id="@+id/eye"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/product_sans_bold"
+            android:text="Wrong Answers"
+            android:textColor="@color/main_blue"
+            android:textSize="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView"
+
+            app:layout_constraintTop_toBottomOf="@+id/imageView2"
+            app:outlineColor="@color/white"
+            app:outlineWidth="2" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnRestart"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="111dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="241dp"
+        android:layout_marginBottom="306dp"
+        android:textAlignment="center"
+        app:flow_horizontalAlign="center"
+        app:flow_verticalAlign="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/rAnswerCounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/product_sans_bold"
+            android:text="1"
+            android:textColor="@color/white"
+            android:textSize="48dp"
+            app:layout_constraintEnd_toStartOf="@+id/eye"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+        <com.iambedant.text.OutlineTextView
+            android:id="@+id/right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/product_sans_bold"
+            android:text="Right Answers"
+            android:textColor="@color/main_blue"
+            android:textSize="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView"
+
+            app:layout_constraintTop_toBottomOf="@+id/imageView2"
+            app:outlineColor="@color/white"
+            app:outlineWidth="2" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/yAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnRestart"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="114dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="298dp"
+        android:layout_marginBottom="248dp"
+        android:textAlignment="center"
+        app:flow_horizontalAlign="center"
+        app:flow_verticalAlign="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/yAnswerCounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/product_sans_bold"
+            android:text="1"
+            android:textColor="@color/white"
+            android:textSize="48dp"
+            app:layout_constraintEnd_toStartOf="@+id/eye"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+        <com.iambedant.text.OutlineTextView
+            android:id="@+id/yAnswerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/product_sans_bold"
+            android:text="Score"
+            android:textColor="@color/main_blue"
+            android:textSize="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView"
+
+            app:layout_constraintTop_toBottomOf="@+id/imageView2"
+            app:outlineColor="@color/white"
+            app:outlineWidth="2" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
